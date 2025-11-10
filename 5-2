@@ -6,7 +6,8 @@ int main()
 	scanf("%d",&a[i]);
 	min=a[0];
 	for(i=0;i<n;i++)
-		if(abs(a[i])<abs(min)) a[i]=min;
+		if(abs(a[i])<abs(min)) 
+		min=a[0];				//min在前，顺序重要
 	printf("%d",min);
 	return 0;
 }
