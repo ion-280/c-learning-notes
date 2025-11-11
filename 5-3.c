@@ -1,19 +1,20 @@
 #include<stdio.h>
 int main()
 {
-	int a[10],i,j,e;
-	int n=10,s=0,t=0;
+	int a[10],i,avg;
+	int n=10,sum=0,t=0;
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
-		s=s+a[i];
+		sum=sum+a[i];
 	}
-	e=s/10;
+	avg=s/n;
 	for(i=0;i<n;i++)
 	{
-			if (a[i]>e)	
+			if (a[i]>avg)	
 				t++;
 	}
 	printf("%d",t);
 	return 0;
 }
+
