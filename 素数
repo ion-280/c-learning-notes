@@ -1,0 +1,23 @@
+4-7 判断素数
+#include<stdio.h>
+int main()
+{
+	int a,num,i=2;
+	scanf("%d",&num);
+	if(num>3)
+	{
+		for(i=2;i<num;i++)
+		{
+		if(a=num%i==0)
+		break;
+		}
+	if(a==0)
+	printf("y");
+	else
+	printf("n");
+	}
+	else
+	printf("y");
+	return 0;
+}
+ 
