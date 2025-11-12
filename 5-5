@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int x[3][3],a,b,sum;
+	int n=3,m=3;
+	for(a=0;a<n;a++)
+		for(b=0;b<m;b++)
+			scanf("%d",&x[a][b]);
+	sum=x[0][0]+x[0][2]+x[1][1]+x[2][0]+x[2][2];
+	printf("%d",sum);
+	return 0;			
+}
