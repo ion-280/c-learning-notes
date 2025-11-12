@@ -7,11 +7,18 @@ int main()
 		scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
 		{
+	int repeat=0		//去重
+		for(j=0;j<i;j++)	//j<i,只需要保证向前不重复
+			{
+				if(a[i]==a[j])
+					{repeat=1;break}
+				if(repeat) continue;		//(repeat)=(repeat==1)
+			}
 		for(j=0;j<n;j++)
 			{
 				if(a[i]%a[j]==0&&i!=j)	
-				printf("%d ",a[i]);	break;		//break需在内循环中，加入{}
-			}
+					{printf("%d ",a[i]);break;}		//if只追踪一句，有break必须检查括号
+			}										//break需在内循环中，加入{}
 		}
 	return 0;
 }
