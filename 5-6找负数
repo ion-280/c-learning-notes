@@ -9,7 +9,8 @@ int main()
 		for(j=0;j<4;j++)
 		{
 			if (a[i][j]<0)	
-			{	printf("%d %d %d",i+1,j+1,a[i][j]);break;	}
+			{	printf("%d %d %d",i+1,j+1,a[i][j]);
+			return 0;}	//用break只跳出内循环，需found标记或外跳
 		}	
 	return 0;
 }
