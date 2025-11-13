@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int x,w,n,s=0,i;
+	scanf("%d %d %d",&x,&w,&n);
+	i=7+w;
+	while(i<=n+7)
+	{
+		if(i%7>0&&i%7<=5)
+			s=s+x;
+	i++;
+	}
+		printf("%d\n",s);
+	return 0;
+}
